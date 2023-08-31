@@ -18,11 +18,11 @@
                     </div>
                     <div class="header-links">
                         <ul>
-                            <li><a href="#About">About</a></li>
-                            <li><a href="#">Careers</a></li>
-                            <li><a href="#">Events</a></li>
-                            <li><a href="#Products">Products</a></li>
-                            <li><a href="#">Support</a></li>
+                            <li><a href="#About" onclick="closeMenu()">About</a></li>
+                            <li><a href="#" onclick="closeMenu()">Careers</a></li>
+                            <li><a href="#" onclick="closeMenu()">Events</a></li>
+                            <li><a href="#Products" onclick="closeMenu()">Products</a></li>
+                            <li><a href="#" onclick="closeMenu()">Support</a></li>
                         </ul>
                     </div>
                     <div class="header-menu">
@@ -137,6 +137,9 @@
 
     <script>
         function openMenu() {
+            document.body.classList.toggle("close");
+        }
+        function closeMenu(){
             document.body.classList.toggle("close");
         }
     </script>

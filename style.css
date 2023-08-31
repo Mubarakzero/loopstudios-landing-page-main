@@ -541,6 +541,7 @@ footer {
     .products-content {
         position: relative;
         z-index: var(--z-index);
+        padding: 3em 0 26em;
     }
 
     .products-card {
